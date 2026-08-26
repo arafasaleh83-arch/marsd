@@ -1,0 +1,6 @@
+{
+  "name": "لوحة المرصد الإعلامي الليبي | Libya Media Intelligence",
+  "description": "لوحة تحكم إعلامية واستخباراتية لرصد وتحليل الأخبار، المزاج الشعبي العام، خريطة بؤر الاحتقان الجغرافية في ليبيا، والبيانات الرسمية مع تحليلات الذكاء الاصطناعي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

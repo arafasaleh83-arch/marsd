@@ -1,0 +1,77 @@
+{
+  "entities": {
+    "official_statements": {
+      "title": "Official Statement",
+      "description": "Official statements from government and diplomatic entities",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "accountId": { "type": "string" },
+        "accountName": { "type": "string" },
+        "accountHandle": { "type": "string" },
+        "accountRole": { "type": "string" },
+        "entityType": { "type": "string" },
+        "platform": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "pubDate": { "type": "string" },
+        "link": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "sentiment": { "type": "string" },
+        "impactLevel": { "type": "string" },
+        "summary": { "type": "string" },
+        "status": { "type": "string" },
+        "publishedAt": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "isBookmarked": { "type": "boolean" }
+      },
+      "required": ["id", "accountName", "content"]
+    },
+    "popular_mood_posts": {
+      "title": "Popular Mood Post",
+      "description": "Public sentiment and social media posts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "accountName": { "type": "string" },
+        "accountHandle": { "type": "string" },
+        "platform": { "type": "string" },
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "pubDate": { "type": "string" },
+        "entryDate": { "type": "string" },
+        "link": { "type": "string" },
+        "sourceReliability": { "type": "string" },
+        "potentialVirality": { "type": "string" },
+        "publicTensionLevel": { "type": "string" },
+        "status": { "type": "string" },
+        "publishedAt": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "summary": { "type": "string" },
+        "isBookmarked": { "type": "boolean" }
+      },
+      "required": ["id", "accountName", "content"]
+    },
+    "official_accounts": {
+      "title": "Official Account",
+      "description": "Tracked official accounts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "handle": { "type": "string" },
+        "role": { "type": "string" },
+        "entityType": { "type": "string" },
+        "platform": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "profileUrl": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "active": { "type": "boolean" },
+        "strategicImportance": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    }
+  }
+}
